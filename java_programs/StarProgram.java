@@ -17,5 +17,7 @@ public class StarProgram {
             }
             System.out.println();
         }
+        scanner.close();
     }
+
 }
