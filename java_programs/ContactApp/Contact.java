@@ -1,4 +1,4 @@
-package java_programs.ContactApp;
+package ContactApp;
 
 public class Contact {
     String name;

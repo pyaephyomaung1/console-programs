@@ -1,4 +1,4 @@
-package java_programs.StudentManagement;
+package StudentManagement;
 
 public class Student {
     private static int count = 0;

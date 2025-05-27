@@ -1,4 +1,4 @@
-package java_programs.StudentManagementGUI;
+package StudentManagementGUI;
 
 import javax.swing.*;
 import java.awt.*;
