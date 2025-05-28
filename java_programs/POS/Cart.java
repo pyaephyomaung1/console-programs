@@ -1,4 +1,4 @@
-package java_programs.POS;
+package POS;
 
 
 import java.util.ArrayList;

@@ -4,5 +4,5 @@ func main() {
 	// even()
 	// role()
 	// calculator()
-	reverse()
+	// reverse()
 }

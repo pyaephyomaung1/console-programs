@@ -20,5 +20,4 @@ func binary() {
 		fmt.Print("No Text or Word. Exiting ...")
 		return 
 	}
-	
 }

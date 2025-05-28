@@ -1,4 +1,4 @@
-package java_programs.TodoApp;
+package TodoApp;
 
 public class Todo {
     String title;

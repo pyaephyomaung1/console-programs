@@ -1,4 +1,4 @@
-package java_programs.TodoApp;
+package TodoApp;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -15,7 +15,6 @@ public class TodoApp {
         System.out.println("4. Delete Todo");
         System.out.println("5. Exit");
     }
-
     public static void addTodo() {
         System.out.println("Enter Todo Title: ");
         String title = scanner.nextLine();
