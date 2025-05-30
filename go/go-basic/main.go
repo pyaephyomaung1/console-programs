@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	// student()
 	// rang()
@@ -23,6 +21,22 @@ func main() {
 	// 	fmt.Println(sum)
 	// }
 	// quotient, remainder := divide(10, 2)
-	// fmt.Print(quotient, remainder)
-	fmt.Print(toUpperCase("Hello World"))
+	// fmt.Print(toUpperCase("apple"))
+	// fmt.Print(toLowerCase("APPLE"))
+	// fmt.Print(sumAll(1, 2, 3, 4, 5, 23, 4234))
+	// nums := []int{100, 200, 300}
+	// fmt.Print(sumAll(nums...))
+	// ops := []string{"add", "substract", "multiply", "divide"}
+	// for _, op := range ops {
+	// 	a, b := 5.0, 10.5
+	// 	result, err := performOperation(op, a, b)
+	// 	if err != nil {
+	// 		fmt.Print("Operation failed")
+	// 	} else {
+	// 		fmt.Println("Operation", result)
+	// 	}
+	// }
+	// test()
+	// slice()
+	duplicate()
 }

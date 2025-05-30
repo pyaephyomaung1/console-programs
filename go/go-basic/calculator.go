@@ -1,34 +1,21 @@
 package main
 
-import "fmt"
+import "errors"
 
-func calculator() {
-	var firstNumber, secondNumber int
-	var operator string
-
-	fmt.Print("Enter First Number: ")
-	fmt.Scanln(&firstNumber)
-
-	fmt.Print("Enter Second Number: ")
-	fmt.Scanln(&secondNumber)
-
-	fmt.Println("Choose Operator (+, -, *, /): ")
-	fmt.Scanln(&operator)
-
-	switch operator {
-	case "+":
-		fmt.Println("Result:", firstNumber+secondNumber)
-	case "-":
-		fmt.Println("Result:", firstNumber-secondNumber)
-	case "*":
-		fmt.Println("Result:", firstNumber*secondNumber)
-	case "/":
-		if secondNumber == 0 {
-			fmt.Println("Error: Division by zero")
-		} else {
-			fmt.Println("Result:", firstNumber/secondNumber)
+func performOperation(operation string, a, b float64) (float64, error) {
+	switch operation {
+	case "add":
+		return a + b, nil
+	case "substract":
+		return a - b, nil
+	case "multiply":
+		return a * b, nil
+	case "divide":
+		if b == 0 {
+			return 0, errors.New("Division by zero")
 		}
+		return a / b, nil
 	default:
-		fmt.Println("Invalid operator.")
+		return 0, errors.New("unsupported operation " + operation)
 	}
 }
