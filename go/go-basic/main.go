@@ -22,6 +22,7 @@ func main() {
 	// } else {
 	// 	fmt.Println(sum)
 	// }
-	quotient, remainder := divide(10, 2)
-	fmt.Print(quotient, remainder)
+	// quotient, remainder := divide(10, 2)
+	// fmt.Print(quotient, remainder)
+	fmt.Print(toUpperCase("Hello World"))
 }
