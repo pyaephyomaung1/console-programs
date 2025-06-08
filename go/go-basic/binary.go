@@ -1,23 +1,24 @@
 package main
 
-import (
-	"bufio"
-	"fmt"
-	"os"
-	"strings"
-)
+import "fmt"
 
-func binary() {
-	fmt.Println("Enter a text or a word")
-	reader := bufio.NewReader(os.Stdin)
-	text, err := reader.ReadString('\n')
-	if err != nil {
-		fmt.Print("Error : ", err)
-		return
+func binary(text string) {
+	alphabets := []rune(text)
+	for _, ch := range alphabets {
+		ascii := int(ch)
+		converter(ascii)
 	}
-	text = strings.TrimSpace(text)
-	if text == "" {
-		fmt.Print("No Text or Word. Exiting ...")
-		return 
+}
+
+func converter(number int) {
+	for number == 0 {
+		fmt.Print(0)
 	}
+	var result string
+	for number > 0 {
+		remainder := number % 2
+		result = fmt.Sprintf("%d%s", remainder, result)
+		number = number / 2
+	}
+	fmt.Print(result, " ")
 }
